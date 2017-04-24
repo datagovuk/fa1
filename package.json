@@ -1,6 +1,6 @@
 {
   "name": "express-prototype",
-  "description": "GOVUK prototyping app in Express",
+  "description": "DGU prototyping app in Express",
   "version": "6.0.0",
   "private": true,
   "engines": {
