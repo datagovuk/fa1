@@ -19,17 +19,30 @@
           <li><div>Expected update:</div>Continuous</li>
         </ul>
 
-
         <p class="description">
           Details and locations of all public sector funded CCTV cameras
         </p>
       </div>
     </div>
 
+    <a href="javascript:0" onclick="$('#previewer').empty().append($('#data').html());">Data</a>
+    <a href="javascript:0" onclick="$('#previewer').empty().append($('#heatmap').html())">Heatmap</a>
+    <a href="javascript:0" onclick="$('#previewer').empty().append($('#map').html())">Map</a>
+
     <div class="grid-row">
-      <div class="column-full" style='border: solid 3px #eee; padding: 30px;'>
-        PREVIEW GOES HERE (Data and map)
+      <div id='previewer' class="column-full preview-table" style='border: solid 3px #eee; '>
+        {% include "includes/cctv_table.html" %}
       </div>
+    </div>
+
+    <div id='data' style="display:none">
+      {% include "includes/cctv_table.html" %}
+    </div>
+    <div id='heatmap' style="display:none">
+      <img src="{{ asset_path }}images/birm_cctv.png" width="100%">
+    </div>
+    <div id='map' style="display:none">
+      <img src="{{ asset_path }}images/cctv_map_large.png" width="100%">
     </div>
 
     <br/>
