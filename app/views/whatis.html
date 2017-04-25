@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Find government data
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-xlarge">
+        What is this format?
+      </h1>
+      <p class="lede">
+        This page describes the different formats of data that you might find on
+        data.gov.uk.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large" id="csv">
+        CSV
+      </h1>
+      <p>
+        CSV (Comma Separated Values) is a simple text based format that separates all of the values
+        by a comma, or sometimes by a tab character.
+      </p>
+
+      <h1 class="heading-medium" id="csv">
+        Tools
+      </h1>
+      <p>
+        CSV files can be opened in programs such as Excel, or LibreOffice.  It is also a popular format
+        with software developers as it is extremely easy to work with.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large" id="csv">
+        JSON
+      </h1>
+      <p>
+        JSON (JavaScript Object Notation) is a format that is extremely popular with software
+        developers, but isn't widely used outside of that area.
+      </p>
+
+      <h1 class="heading-medium" id="csv">
+        Tools
+      </h1>
+      <p>
+        The most likely tools to work with JSON data are software development languages.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large" id="wms">
+        SHP
+      </h1>
+      <p>
+        SHP files are often called Shapefile.  They contain polygons and metadata for data that is
+        intended for mapping purposes.
+      </p>
+
+      <h1 class="heading-medium" id="csv">
+        Tools
+      </h1>
+      <p>
+        SHP files can be used with GIS tools such as <a href="">QGIS</a>, or <a href="">ArcGIS</a>.
+      </p>
+    </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large" id="wms">
+        WMS
+      </h1>
+      <p>
+        WMS urls are Web Map Services that describe different layers of a map that are available.  It
+         is possible to overlay multiple layers on a map to see how things are related.
+      </p>
+
+      <h1 class="heading-medium" id="csv">
+        Tools
+      </h1>
+      <p>
+        WMS urls can be used with GIS tools such as <a href="">QGIS</a>, or <a href="">ArcGIS</a>.
+      </p>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
