@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Find government data
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-xlarge">
+        Thinking about data
+      </h1>
+
+      <p class="lede">
+         We're trying to think a bit differently about the data we currently hold (and might hold)
+         and trying to classify it to help us understand how different data may, or may not, affect
+         what users deem 'relevant'.
+      </p>
+
+      <p>There is almost certainly lots of prior art here, we should find it</p>
+
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-large">
+        Data might be....
+      </h1>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-medium">
+        Things
+      </h1>
+
+      <p>
+        Data describing things, often physical things, but sometimes abstract.
+      </p>
+      <ul class="list list-bullet">
+        <li>Has an identity, often has a name or code identifying it</li>
+        <li>Often has a location, although this might be transient</li>
+      </ul>
+
+      <p>
+        <span class="bold-small">Examples:</span> Naptan, Libraries, CCTV.
+      </p>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-medium">
+        Events
+      </h1>
+      <p>
+        Data describing events, things that will happen or have happened.
+      </p>
+      <ul class="list list-bullet">
+        <li>Has an identity, often has a name or code identifying it</li>
+        <li>Has a location, everything happens somewhere</li>
+        <li>Has a time, this might be a date, or date range when the event will happen</li>
+      </ul>
+      <p>
+        <span class="bold-small">Examples:</span>
+        Bin collection times, Planned Roadworks,
+      </p>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-medium">
+        Transactions
+      </h1>
+
+      <p>
+        An interaction between two or more parties, often financial.
+      </p>
+      <ul class="list list-bullet">
+        <li>Has at least 2 actors</li>
+        <li>Normally has a value attached</li>
+        <li>Has a time when the transaction took place</li>
+      </ul>
+
+      <p>
+        <span class="bold-small">Examples:</span> Spending (various amounts), GPC.
+      </p>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-medium">
+        Facts
+      </h1>
+
+      <p>
+        This is probably at the wrong level of abstraction, but we're covering everything
+        else under this until we work out what the others are.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
+
+
