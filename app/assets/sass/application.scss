@@ -228,7 +228,34 @@ ul.pagination {
   }
 }
 
+#previewer {
+  margin-top: -2px;
+  border: solid 3px #ddd;
+}
+
 .preview-table {
   height: 400px;
   overflow-y: scroll;
+}
+
+.tab {
+  display: inline;
+  padding: 20px;
+  padding-bottom: 0px;
+  line-height: 30px;
+  border: solid 2px #ddd;
+  border-bottom: none;
+  margin-right: 4px;
+  a {
+    position: relative;
+    top: -8px;
+    text-decoration: none;
+  }
+}
+
+.tab.inactive {
+  background-color: #eee;
+}
+.tab.active {
+    border-color: #aaa;
 }

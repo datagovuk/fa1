@@ -25,14 +25,22 @@
       </div>
     </div>
 
-    <a href="javascript:0" onclick="$('#previewer').empty().append($('#data').html());">Data</a>
-    <a href="javascript:0" onclick="$('#previewer').empty().append($('#heatmap').html())">Heatmap</a>
-    <a href="javascript:0" onclick="$('#previewer').empty().append($('#map').html())">Map</a>
+    <div class="tab active">
+      <a href="javascript:0" onclick="return do_switch('#previewer','#data', this);">Data</a>
+    </div>
+    <div class="tab inactive">
+      <a href="javascript:0" onclick="return do_switch('#previewer','#heatmap', this);">Heatmap</a>
+    </div>
+    <div class="tab inactive">
+      <a href="javascript:0" onclick="return do_switch('#previewer','#map', this);">Map</a>
+    </div>
 
     <div class="grid-row">
-      <div id='previewer' class="column-full preview-table" style='border: solid 3px #eee; '>
+      <div class="column-full">
+      <div id='previewer' class="column-full preview-table">
         {% include "includes/cctv_table.html" %}
       </div>
+    </div>
     </div>
 
     <div id='data' style="display:none">
