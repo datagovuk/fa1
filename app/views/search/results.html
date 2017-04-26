@@ -89,53 +89,15 @@
 
     <div class="column-two-thirds">
 
-      <div class="dataset">
-        <h1 class="heading-medium">
-          <a href="dataset/local/spending">Spend over £25,000</a>
-          <span class="heading-secondary">Multiple Organisations</span>
-        </h1>
-        <p>Aggregated spend dataset for all local authorities</p>
-      </div>
-
-      <div class="dataset">
-        <h1 class="heading-medium">
-          <a href="dataset">Listed Buildings</a>
-          <span class="heading-secondary">Local Authorities</span>
-        </h1>
-        <p>Listed buildings of special, or architectural interest</p>
-      </div>
-      <hr/>
-      <div class="dataset">
-        <h1 class="heading-medium">
-          <a href="dataset">Listed Buildings</a>
-          <span class="heading-secondary">Local Authorities</span>
-        </h1>
-        <p>Listed buildings of special, or architectural interest</p>
-      </div>
-      <hr/>
-      <div class="dataset">
-        <h1 class="heading-medium">
-          <a href="dataset">Listed Buildings</a>
-          <span class="heading-secondary">Local Authorities</span>
-        </h1>
-        <p>Listed buildings of special, or architectural interest</p>
-      </div>
-      <hr/>
-      <div class="dataset">
-        <h1 class="heading-medium">
-          <a href="dataset">Listed Buildings</a>
-          <span class="heading-secondary">Local Authorities</span>
-        </h1>
-        <p>Listed buildings of special, or architectural interest</p>
-      </div>
-      <hr/>
-      <div class="dataset">
-        <h1 class="heading-medium">
-          <a href="dataset">Listed Buildings</a>
-          <span class="heading-secondary">Local Authorities</span>
-        </h1>
-        <p>Listed buildings of special, or architectural interest</p>
-      </div>
+      {% for bb in data.broadband | reverse()  %}
+        <div class="dataset">
+          <h1 class="heading-medium">
+            <a href="dataset/spending">{{ bb.title }} </a>
+            <span class="heading-secondary">{{ bb.publisher }}</span>
+          </h1>
+          <p>{{ bb.description | truncate(140)  }}</p>
+        </div>
+      {% endfor %}
       <hr/>
       <ul class="pagination">
         <li>1</li>
