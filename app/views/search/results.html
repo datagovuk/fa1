@@ -30,31 +30,63 @@
   <div class="grid-row">
     <div class="column-two-thirds">
       <br/>
-      <span class="bold-xlarge">125</span> results
+      <span class="bold-xlarge">356</span> results for <span class="bold-small">broadband</span>
     </div>
   </div>
 
   <div class="grid-row">
-    <div class="column-one-third">
+    <div class="column-one-third filter-block">
 
-      <fieldset class="filter-block">
+      <h1 class="heading-small">
+        I'm looking for
+      </h1>
+
+      <fieldset style="margin-top: 30px;">
         <label for="publishers"
                class="form-label bold">
-          Show
+          Year
         </label>
-        <div class="multiple-choice">
-          <input id="radio-inline-1" type="radio" name="local_national" value="local"
-            checked="true"
-            onclick="window.location.href='local-search-results'">
-          <label for="radio-inline-1">Local datasets</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="radio-inline-2" type="radio" name="local_national" value="national"
-            onclick="window.location.href='search-results'">
-          <label for="radio-inline-2">National datasets</label>
-        </div>
+        <select class="form-control" id="select-box">
+          <option></option>
+          <option>2017</option>
+          <option>2016</option>
+          <option>2015</option>
+        </select>
       </fieldset>
+
+      <fieldset style="margin-top: 30px;">
+        <label for="publishers"
+               class="form-label bold">
+          Location
+        </label>
+        <select class="form-control" id="select-box">
+          <option></option>
+          <option>National</option>
+          <option>Cheshire</option>
+          <option>Wirral</option>
+          <option>London</option>
+        </select>
+      </fieldset>
+
+      <fieldset style="margin-top: 30px;">
+        <label for="publishers"
+               class="form-label bold">
+          Publisher
+        </label>
+        <select class="form-control" id="select-box">
+          <option></option>
+          <option>Central Government</option>
+          <option>Local Authorities</option>
+          <option>Other Government Bodies</option>
+        </select>
+      </fieldset>
+
+      <br/>
     </div>
+
+
+
+
     <div class="column-two-thirds">
 
       <div class="dataset">
