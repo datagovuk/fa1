@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Find government data
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-full">
+      <h1 class="heading-xlarge">
+        What we think 'relevant' means
+      </h1>
+
+      <p class="lede">
+        When a user finds a page that describes some data, how do they determine
+        that it is relevant?
+      </p>
+
+      <img src="{{ asset_path }}images/relevant.png" xwidth="100%">
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-medium">
+        What we think 'relevant' might mean for data
+      </h1>
+
+      <ul class="list list-bullet">
+        <li>
+          Meets expectations for what user expected to see.
+        </li>
+        <li>
+          Matches the <a href="/abstraction">type of data</a> that they
+          are looking for. If a user is looking for libraries, they are looking
+          for physical things.
+        </li>
+        <li>
+          Only have the page, and links, to determine if it is relevant
+        </li>
+        <li>
+          We don't know what user expectations are (they haven't sketched it out),
+          but we do know what they do to try and meet them (download the data).
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
+
+
