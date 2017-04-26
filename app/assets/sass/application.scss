@@ -266,3 +266,9 @@ ul.pagination {
   position: sticky !important;
   top: 10px;
 }
+
+
+a:focus {
+  background-color: transparent;
+  outline: none;
+}
