@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+
+{% block page_title %}
+  Search results - data.gov.uk
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">
+        Search results for
+      </h1>
+    </div>
+
+    <form id="search-form" action="/search-results" method="GET" class="column-two-thirds">
+      <fieldset>
+        <div id="search-box">
+          <input id="q" name="q" type="text" placeholder="" class="form-control search" value="broadband" autocomplete="off"/><button type="submit" class="search-submit">Find data</button>
+        </div>
+      </fieldset>
+    </form>
+
+  </div>
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <br/>
+      <span class="bold-xlarge">125</span> results
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-one-third">
+
+      <fieldset class="filter-block">
+        <label for="publishers"
+               class="form-label bold">
+          Show
+        </label>
+        <div class="multiple-choice">
+          <input id="radio-inline-1" type="radio" name="local_national" value="local"
+            checked="true"
+            onclick="window.location.href='local-search-results'">
+          <label for="radio-inline-1">Local datasets</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="radio-inline-2" type="radio" name="local_national" value="national"
+            onclick="window.location.href='search-results'">
+          <label for="radio-inline-2">National datasets</label>
+        </div>
+      </fieldset>
+    </div>
+    <div class="column-two-thirds">
+
+      <div class="dataset">
+        <h1 class="heading-medium">
+          <a href="dataset/local/spending">Spend over £25,000</a>
+          <span class="heading-secondary">Multiple Organisations</span>
+        </h1>
+        <p>Aggregated spend dataset for all local authorities</p>
+      </div>
+
+      <div class="dataset">
+        <h1 class="heading-medium">
+          <a href="dataset">Listed Buildings</a>
+          <span class="heading-secondary">Local Authorities</span>
+        </h1>
+        <p>Listed buildings of special, or architectural interest</p>
+      </div>
+      <hr/>
+      <div class="dataset">
+        <h1 class="heading-medium">
+          <a href="dataset">Listed Buildings</a>
+          <span class="heading-secondary">Local Authorities</span>
+        </h1>
+        <p>Listed buildings of special, or architectural interest</p>
+      </div>
+      <hr/>
+      <div class="dataset">
+        <h1 class="heading-medium">
+          <a href="dataset">Listed Buildings</a>
+          <span class="heading-secondary">Local Authorities</span>
+        </h1>
+        <p>Listed buildings of special, or architectural interest</p>
+      </div>
+      <hr/>
+      <div class="dataset">
+        <h1 class="heading-medium">
+          <a href="dataset">Listed Buildings</a>
+          <span class="heading-secondary">Local Authorities</span>
+        </h1>
+        <p>Listed buildings of special, or architectural interest</p>
+      </div>
+      <hr/>
+      <div class="dataset">
+        <h1 class="heading-medium">
+          <a href="dataset">Listed Buildings</a>
+          <span class="heading-secondary">Local Authorities</span>
+        </h1>
+        <p>Listed buildings of special, or architectural interest</p>
+      </div>
+      <hr/>
+      <ul class="pagination">
+        <li>1</li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

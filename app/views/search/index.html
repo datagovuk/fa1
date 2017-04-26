@@ -1,28 +1,117 @@
 {% extends "layout.html" %}
 
+
 {% block page_title %}
-  Find government data
+  Find UK government data
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
 
-  <div class="grid-row">
-    <div class="column-full">
+  <div class="masthead">
 
-      <h1 class="heading-xlarge">
-        Homepage
+    <div class="grid-row">
+
+      <div class="column-two-thirds">
+        <h1 class="heading-xlarge">
+          Find UK government data
+        </h1>
+
+        <p class="lede">
+          You can use this data to learn more about how government
+          works, carry out research or build applications and services
+        </p>
+      </div>
+
+      <form id="search-form" action="results" method="GET" class="column-two-thirds">
+        <fieldset>
+          <div id="search-box">
+            <input id="q" name="q" type="text" placeholder="" class="form-control search" autocomplete="off"/><button type="submit" class="search-submit">Find data</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Browse collections
+        <span class="heading-secondary">Collections are curated datasets related to a specific topic</span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-one-half">
+      <h1 class="heading-medium">
+        <a href="/collections/registers">Registers</a>
+        <p>Get authorative, high-quality datasets</p>
+      </h1>
+    </div>
+    <div class="column-one-half">
+      <h1 class="heading-medium">
+        <a href="/collections/flooding">Flooding</a>
+        <p>Datasets related to the recent floods</p>
+      </h1>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="grid-row">
+    <div class="column-one-half">
+
+      <h1 class="heading-large">
+        Trending/Popular datasets
+        <span class="heading-secondary">The most popular datasets from the last week</span>
       </h1>
 
-      <p class="lede">
-      </p>
+      <h1 class="heading-medium">
+        <a href="/dataset/cats">Cats per square kilometer</a>
+        <p>Describes the mean number of cats per square kilometer on the OS grid</p>
+      </h1>
+      <hr/>
+
+      <h1 class="heading-medium">
+        <a href="/dataset/dogs">Dogs per square kilometer</a>
+        <p>Describes the mean number of dogs per square kilometer on the OS grid</p>
+      </h1>
+      <hr/>
+
+      <h1 class="heading-medium">
+        <a href="/dataset/dogs">Mice reports from 125 Kingsway</a>
+        <p>Reports of 'mus musculus' in 2017</p>
+      </h1>
+      <hr/>
+    </div>
+
+    <div class="column-one-half">
+
+      <h1 class="heading-large">
+        Upcoming datasets
+        <span class="heading-secondary">Datasets due for release in the near future</span>
+      </h1>
+
+      <h1 class="heading-medium">
+        <a href="/dataset/cats">Guinea Pigs per square kilometer</a>
+        <p>Describes the mean number of guinea pigs per square kilometer on the OS grid</p>
+        <p class="heading-secondary">
+          Due: June 2017
+          <a style="float:right;" href="">Alert me</a>
+        </p>
+      </h1>
+      <hr style="clear:both;"/>
+
     </div>
 
   </div>
 
+
+
+
 </main>
 
 {% endblock %}
-
-
